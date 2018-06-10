@@ -155,7 +155,7 @@
             this.brnCancelar.Name = "brnCancelar";
             this.brnCancelar.Size = new System.Drawing.Size(173, 44);
             this.brnCancelar.TabIndex = 6;
-            this.brnCancelar.Text = "Cancelar";
+            this.brnCancelar.Text = "Limpiar";
             this.brnCancelar.UseVisualStyleBackColor = false;
             this.brnCancelar.Click += new System.EventHandler(this.brnCancelar_Click);
             // 

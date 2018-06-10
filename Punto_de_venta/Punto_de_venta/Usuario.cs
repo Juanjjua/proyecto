@@ -10,7 +10,7 @@ namespace Punto_de_venta
     {
         string username;
         string pasword;
-        int type;
+        int type; // si es 1 es vendedor, si es 0 es vendedor
 
         public string Username { get => username; set => username = value; }
         public string Pasword { get => pasword; set => pasword = value; }
