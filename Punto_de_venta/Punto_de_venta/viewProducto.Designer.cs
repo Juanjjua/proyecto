@@ -36,11 +36,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.brnCancelar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.tbCosto = new System.Windows.Forms.TextBox();
+            this.tbPrecio = new System.Windows.Forms.TextBox();
+            this.tbCantidad = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.76247F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.23753F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 5);
@@ -58,11 +58,11 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAceptar, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.brnCancelar, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tbNombre, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtCodigo, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tbCosto, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tbPrecio, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.tbCantidad, 2, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -144,6 +144,7 @@
             this.btnAceptar.TabIndex = 5;
             this.btnAceptar.Text = "Guardar";
             this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // brnCancelar
             // 
@@ -152,50 +153,51 @@
             this.brnCancelar.ForeColor = System.Drawing.Color.White;
             this.brnCancelar.Location = new System.Drawing.Point(201, 248);
             this.brnCancelar.Name = "brnCancelar";
-            this.brnCancelar.Size = new System.Drawing.Size(174, 44);
+            this.brnCancelar.Size = new System.Drawing.Size(173, 44);
             this.brnCancelar.TabIndex = 6;
             this.brnCancelar.Text = "Cancelar";
             this.brnCancelar.UseVisualStyleBackColor = false;
+            this.brnCancelar.Click += new System.EventHandler(this.brnCancelar_Click);
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(201, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 22);
-            this.textBox1.TabIndex = 7;
+            this.tbNombre.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbNombre.Location = new System.Drawing.Point(201, 23);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(173, 22);
+            this.tbNombre.TabIndex = 7;
             // 
-            // textBox2
+            // txtCodigo
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(201, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 22);
-            this.textBox2.TabIndex = 8;
+            this.txtCodigo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCodigo.Location = new System.Drawing.Point(201, 68);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(173, 22);
+            this.txtCodigo.TabIndex = 8;
             // 
-            // textBox3
+            // tbCosto
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(201, 113);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 22);
-            this.textBox3.TabIndex = 9;
+            this.tbCosto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbCosto.Location = new System.Drawing.Point(201, 113);
+            this.tbCosto.Name = "tbCosto";
+            this.tbCosto.Size = new System.Drawing.Size(173, 22);
+            this.tbCosto.TabIndex = 9;
             // 
-            // textBox4
+            // tbPrecio
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(201, 158);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(174, 22);
-            this.textBox4.TabIndex = 10;
+            this.tbPrecio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbPrecio.Location = new System.Drawing.Point(201, 158);
+            this.tbPrecio.Name = "tbPrecio";
+            this.tbPrecio.Size = new System.Drawing.Size(173, 22);
+            this.tbPrecio.TabIndex = 10;
             // 
-            // textBox5
+            // tbCantidad
             // 
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(201, 203);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(174, 22);
-            this.textBox5.TabIndex = 11;
+            this.tbCantidad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbCantidad.Location = new System.Drawing.Point(201, 203);
+            this.tbCantidad.Name = "tbCantidad";
+            this.tbCantidad.Size = new System.Drawing.Size(173, 22);
+            this.tbCantidad.TabIndex = 11;
             // 
             // viewProducto
             // 
@@ -222,10 +224,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button brnCancelar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox tbCosto;
+        private System.Windows.Forms.TextBox tbPrecio;
+        private System.Windows.Forms.TextBox tbCantidad;
     }
 }

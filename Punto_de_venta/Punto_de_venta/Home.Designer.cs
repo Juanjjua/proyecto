@@ -97,6 +97,7 @@
             this.bt_ventas.Text = "VENTAS";
             this.bt_ventas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bt_ventas.UseVisualStyleBackColor = false;
+            this.bt_ventas.Click += new System.EventHandler(this.bt_ventas_Click);
             // 
             // btn_Productos
             // 
@@ -111,6 +112,7 @@
             this.btn_Productos.Text = "INVENTARIO";
             this.btn_Productos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Productos.UseVisualStyleBackColor = false;
+            this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
             // 
             // panel2
             // 
@@ -129,6 +131,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Home";
             this.Text = "PUNTO DE VENTA";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
