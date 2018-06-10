@@ -12,3 +12,17 @@ C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_ven
 C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.FrmProducto.resources
 C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Producto.resources
 C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.ListadoProductos.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\bin\Debug\Punto_de_venta.exe.config
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\bin\Debug\Punto_de_venta.exe
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\bin\Debug\Punto_de_venta.pdb
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csprojAssemblyReference.cache
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Login.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Home.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.FrmProducto.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Properties.Resources.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.viewProducto.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.ListadoProductos.resources
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csproj.GenerateResource.cache
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csproj.CoreCompileInputs.cache
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.exe
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.pdb

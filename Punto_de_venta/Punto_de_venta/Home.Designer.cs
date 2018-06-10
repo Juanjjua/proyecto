@@ -31,10 +31,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.bt_ventas = new System.Windows.Forms.Button();
             this.btn_Productos = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -82,14 +82,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(210, 602);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(219, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(860, 602);
-            this.panel2.TabIndex = 1;
-            // 
             // bt_ventas
             // 
             this.bt_ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -119,6 +111,15 @@
             this.btn_Productos.Text = "INVENTARIO";
             this.btn_Productos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Productos.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(219, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(860, 602);
+            this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Home
             // 
