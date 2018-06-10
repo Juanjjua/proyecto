@@ -1,0 +1,14 @@
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\bin\Debug\Punto_de_venta.exe.config
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\bin\Debug\Punto_de_venta.exe
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\bin\Debug\Punto_de_venta.pdb
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csprojAssemblyReference.cache
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Properties.Resources.resources
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csproj.GenerateResource.cache
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csproj.CoreCompileInputs.cache
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.exe
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.pdb
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Login.resources
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Home.resources
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.FrmProducto.resources
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Producto.resources
+C:\Users\Abner\source\repos\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.ListadoProductos.resources
