@@ -169,8 +169,6 @@ namespace Punto_de_venta
         {
             actualizarArchivoProductos();
             registarDetalleVenta();
-            ventaRealizada.Cliente = 
-
         }
 
         public void actualizarArchivoProductos()
