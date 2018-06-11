@@ -13,7 +13,9 @@ namespace Punto_de_venta
 {
     public partial class Ventas : UserControl
     {
+        List<DetalleVenta> listadeventa = new List<DetalleVenta>();
         List<clientes> listadoClientes = new List<clientes>();
+        List<producto> listado = new List<producto>(); //creo una variable global tipo producto para guardar todos los productos
         public Ventas()
         {
             InitializeComponent();
@@ -21,6 +23,7 @@ namespace Punto_de_venta
 
         private void Ventas_Load(object sender, EventArgs e)
         {
+            actualizar();
             string archivo = "clientes.txt";
             FileStream leer = new FileStream(archivo, FileMode.Open, FileAccess.Read);
             StreamReader lectura = new StreamReader(leer);
@@ -71,6 +74,129 @@ namespace Punto_de_venta
                 {
                     btnGuardar.Visible = false;
                 }
+            }
+        }
+        public void actualizar() //actualiza los datos que estan en el archivo productos y los agrega a la lista declarada arriba
+        {
+            string archivo = "productos.txt";
+            FileStream leer = new FileStream(archivo, FileMode.Open, FileAccess.Read);
+            StreamReader lectura = new StreamReader(leer);
+            while (lectura.Peek() > -1) //Leo todos las filas del archivo
+            {
+                producto temp = new producto();
+                temp.Nombre = lectura.ReadLine();
+                temp.Codigo = lectura.ReadLine();
+                temp.Costo = float.Parse(lectura.ReadLine());
+                temp.Precio = float.Parse(lectura.ReadLine());
+                temp.Cantidad = Convert.ToInt32(lectura.ReadLine());
+                listado.Add(temp); //agrego a la lista de productos
+            }
+            lectura.Close();
+            ActualizarProductos();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int index = dataGridView1.CurrentRow.Index;
+            int monto = Convert.ToInt32(tbCantidad.Text);
+            if (monto > listado[index].Cantidad)
+            {
+                MessageBox.Show("No se puede realizar operacion, verifique cantidad");
+            }
+            else
+            {
+                float total = monto * listado[index].Precio;
+                DetalleVenta temp = new DetalleVenta();
+                temp.Producto = listado[index].Nombre;
+                temp.Precio = listado[index].Precio;
+                temp.Cantidad = monto;
+                listado[index].Cantidad = listado[index].Cantidad - monto;
+                temp.Total = total;
+                listadeventa.Add(temp);
+                ActualizarDetalleVentas();
+                ActualizarProductos();
+                CalcularSubTotal();
+            }
+        }
+
+        public void ActualizarProductos ()
+        {
+            dataGridView1.DataSource = null; //vacio el datagrid para que borre los datos anteriores
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = listado; // lo lleno con los datos del listado que he reunido en la fucion while
+            dataGridView1.Refresh();
+            dataGridView1.Columns["Costo"].Visible = false;
+        }
+
+        public void ActualizarDetalleVentas()
+        {
+            dataGridView2.DataSource = null;
+            dataGridView2.Refresh();
+            dataGridView2.DataSource = listadeventa;
+            dataGridView2.Refresh();
+        }
+
+        public void CalcularSubTotal()
+        {
+            float subTotal = 0;
+            for (int x =0; x < listadeventa.Count; x++)
+            {
+                subTotal = subTotal + listadeventa[x].Total;
+            }
+            label7.Text = Convert.ToString(subTotal);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            float cambio = 0;
+            float dinero = float.Parse(textBox4.Text);
+            float subTotal = float.Parse(label7.Text);
+            if (dinero < subTotal)
+            {
+                MessageBox.Show("No se puede realizar operacion, verifique cantidad");
+            }
+            else
+            {
+                cambio = dinero - subTotal;
+                label8.Text = Convert.ToString(cambio);
+            }
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e) //GUARDA TODOS LOS CAMBIOS
+        {
+            actualizarArchivoProductos();
+
+        }
+
+        public void actualizarArchivoProductos()
+        {
+            string archivo = "productos.txt";
+            FileStream stream = new FileStream(archivo, FileMode.Create, FileAccess.Write); //este tipo porque voy a reescribir el archivo con los nuevos productos
+            StreamWriter writer = new StreamWriter(stream);
+            for (int i = 0; i < listado.Count; i++) // en listado esta la lista actualizada de todos los productos
+            {
+                writer.WriteLine(listado[i].Nombre);
+                writer.WriteLine(listado[i].Codigo);
+                writer.WriteLine(listado[i].Costo);
+                writer.WriteLine(listado[i].Precio);
+                writer.WriteLine(listado[i].Cantidad);
+            }
+            writer.Close();
+        }
+
+        public void registarDetalleVenta()
+        {
+            string archivo = "detalleVenta.txt";
+            FileStream stream = new FileStream(archivo, FileMode.Append, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(stream);
+            // si estos campos estan llenos procedo a guardar los datos
+            for ( int y = 0; y< listadeventa.Count; y++)
+            {
+                writer.WriteLine(listadeventa[y].Producto);
+                writer.WriteLine(listadeventa[y].Precio);
+                writer.WriteLine(listadeventa[y].Cantidad);
+                writer.WriteLine(listadeventa[y].Total);
             }
         }
     }

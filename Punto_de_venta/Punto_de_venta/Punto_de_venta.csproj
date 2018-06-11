@@ -69,6 +69,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs" />
+    <Compile Include="Venta.cs" />
     <Compile Include="Ventas.cs">
       <SubType>UserControl</SubType>
     </Compile>
