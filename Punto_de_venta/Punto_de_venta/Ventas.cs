@@ -13,9 +13,11 @@ namespace Punto_de_venta
 {
     public partial class Ventas : UserControl
     {
+        Venta ventaRealizada = new Venta();
         List<DetalleVenta> listadeventa = new List<DetalleVenta>();
         List<clientes> listadoClientes = new List<clientes>();
         List<producto> listado = new List<producto>(); //creo una variable global tipo producto para guardar todos los productos
+        string codigoDeVenta = ""; //Servira para tener un codigo para un detalle y este lo vincule a los datos generales de la venta
         public Ventas()
         {
             InitializeComponent();
@@ -166,6 +168,8 @@ namespace Punto_de_venta
         private void button3_Click(object sender, EventArgs e) //GUARDA TODOS LOS CAMBIOS
         {
             actualizarArchivoProductos();
+            registarDetalleVenta();
+            ventaRealizada.Cliente = 
 
         }
 
@@ -190,6 +194,10 @@ namespace Punto_de_venta
             string archivo = "detalleVenta.txt";
             FileStream stream = new FileStream(archivo, FileMode.Append, FileAccess.Write);
             StreamWriter writer = new StreamWriter(stream);
+            //Generare un codigo aleatorio
+            Random rnd = new Random();
+            string codigoDeVenta = Convert.ToString(rnd.Next(999999999)); // me da un numero de 0 a 99999999 para que la probabildad sea poca de que me de un numero igual
+            writer.WriteLine(codigoDeVenta);
             // si estos campos estan llenos procedo a guardar los datos
             for ( int y = 0; y< listadeventa.Count; y++)
             {
@@ -198,6 +206,8 @@ namespace Punto_de_venta
                 writer.WriteLine(listadeventa[y].Cantidad);
                 writer.WriteLine(listadeventa[y].Total);
             }
+            writer.WriteLine("-1") //Me servira para saber cuando termina un detalle de venta
+
         }
     }
 }
