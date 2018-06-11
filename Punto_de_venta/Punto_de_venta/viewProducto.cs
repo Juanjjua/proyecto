@@ -15,16 +15,17 @@ namespace Punto_de_venta
     {
         List<producto> entrada = new List<producto>();
         int indice = 0; // me dice en que posicion esta el que debo modificar
-        int actualizar = 0; //si es 0 es un producto nuevo, si es 1 se va a editar el producto
-        public viewProducto()
+        int actualizar = 0; //si es 0 es un producto nuevo, si es 1 se va a actualizar  el producto
+        public viewProducto() //crea mi formulario sin ningun dato
         {
+            actualizar = 0;
             InitializeComponent();
         }
-        public viewProducto(List<producto> editar, int posicion)
+        public viewProducto(List<producto> editar, int posicion) //crea mi formulario pasando los tados del producto y la posicion en la que se encuentra
         {
             entrada = editar;
             indice = posicion;
-            actualizar = 1;
+            actualizar = 1; //voy a modificar los datos que mandan
             InitializeComponent();
         }
 
@@ -83,10 +84,11 @@ namespace Punto_de_venta
                                 {
                                     writer.WriteLine(entrada[i].Nombre);
                                     writer.WriteLine(entrada[i].Codigo);
-                                    writer.WriteLine(entrada[i].Costo);
-                                    writer.WriteLine(entrada[i].Precio);
-                                    writer.WriteLine(entrada[i].Cantidad);
+                                    writer.WriteLine(Convert.ToString(entrada[i].Costo));
+                                    writer.WriteLine(Convert.ToString(entrada[i].Precio));
+                                    writer.WriteLine(Convert.ToString(entrada[i].Cantidad));
                                 }
+                                MessageBox.Show("Registro  ACTUALIZADO agregado");
                                 writer.Close();
                             }
                         }

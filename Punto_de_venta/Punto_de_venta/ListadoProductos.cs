@@ -13,7 +13,7 @@ namespace Punto_de_venta
 {
     public partial class ListadoProductos : UserControl
     {
-        List<producto> listado = new List<producto>();
+        List<producto> listado = new List<producto>(); //creo una variable global tipo producto para guardar todos los productos
         public ListadoProductos()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Punto_de_venta
         {
             actualizar();
         }
-        public void actualizar ()
+        public void actualizar () //actualiza los datos que estan en el archivo productos y los agrega a la lista declarada arriba
         {
             string archivo = "productos.txt";
             FileStream leer = new FileStream(archivo, FileMode.Open, FileAccess.Read);
@@ -44,9 +44,9 @@ namespace Punto_de_venta
                 listado.Add(temp); //agrego a la lista de productos
             }
             lectura.Close();
-            dataGridView1.DataSource = null; //vacio el datagrid
+            dataGridView1.DataSource = null; //vacio el datagrid para que borre los datos anteriores
             dataGridView1.Refresh();
-            dataGridView1.DataSource = listado; // lo lleno con los datos del listado
+            dataGridView1.DataSource = listado; // lo lleno con los datos del listado que he reunido en la fucion while
             dataGridView1.Refresh();
         }
 

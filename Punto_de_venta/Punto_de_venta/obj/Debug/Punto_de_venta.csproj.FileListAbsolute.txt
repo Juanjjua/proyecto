@@ -26,3 +26,4 @@ D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\De
 D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csproj.CoreCompileInputs.cache
 D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.exe
 D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.pdb
+D:\Trabajo\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.Ventas.resources

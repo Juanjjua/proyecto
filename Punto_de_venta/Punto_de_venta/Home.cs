@@ -12,15 +12,15 @@ namespace Punto_de_venta
 {
     public partial class Home : Form
     {
-        int tipoUsuario = 0;// sI ES 1 es administrador , si es 2 es vendedor
+        int tipoUsuario = 1;// sI ES 1 es administrador , si es 2 es vendedor
         public Home()
         {
             InitializeComponent();
         }
         public Home(int type)
         {
-            InitializeComponent();
             tipoUsuario = type;
+            InitializeComponent();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace Punto_de_venta
         {
             panel2.Controls.Clear(); //limpio el panel para agregar un nuevo View
             var productos = new ListadoProductos();
-            panel2.Controls.Add(productos); //agrego el view al panel
+            panel2.Controls.Add(productos); //agrega la vista de productos al panel2
             productos.Dock = DockStyle.Fill; // hace que la pantalla se ajuste al espacio
         }
 
@@ -53,11 +53,18 @@ namespace Punto_de_venta
                 btn_Productos.Enabled = false;
                 btn_Productos.Visible = false;
             }
+            if (tipo == 1)
+            {
+                
+            }
         }
 
         private void bt_ventas_Click(object sender, EventArgs e)
         {
-            panel2.Controls.Clear();
+            panel2.Controls.Clear(); //limpio el panel para agregar un nuevo View de ventas
+            var ventas = new Ventas();
+            panel2.Controls.Add(ventas);//agrega la vista de ventas al panel2
+            ventas.Dock = DockStyle.Fill; // hace que la pantalla se ajuste al espacio
         }
     }
 }

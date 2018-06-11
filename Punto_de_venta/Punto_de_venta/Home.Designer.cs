@@ -31,10 +31,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.bt_ventas = new System.Windows.Forms.Button();
-            this.btn_Productos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.bt_ventas = new System.Windows.Forms.Button();
+            this.btn_Productos = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -82,6 +82,16 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(210, 602);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(219, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(860, 602);
+            this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // bt_ventas
             // 
             this.bt_ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -103,7 +113,7 @@
             // 
             this.btn_Productos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btn_Productos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Productos.ForeColor = System.Drawing.Color.White;
+            this.btn_Productos.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Productos.Image = global::Punto_de_venta.Properties.Resources.bodega;
             this.btn_Productos.Location = new System.Drawing.Point(3, 123);
             this.btn_Productos.Name = "btn_Productos";
@@ -113,15 +123,6 @@
             this.btn_Productos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Productos.UseVisualStyleBackColor = false;
             this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(219, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(860, 602);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Home
             // 
