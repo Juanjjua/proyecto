@@ -231,7 +231,7 @@ namespace Punto_de_venta
             guardar.Cliente = registrar;
             guardar.Total = float.Parse(label7.Text);
             guardar.Dinero = float.Parse(textBox4.Text);
-            guardar.Fecha = DateTime.Now;
+            guardar.Fecha = dateTimePicker1.Value;
             guardar.Vuelto = cambio;
             guardar.Cajero = vendedorActual;
             string archivo = "venta.txt";
@@ -246,6 +246,9 @@ namespace Punto_de_venta
             writer.WriteLine(guardar.Dinero);
             writer.WriteLine(guardar.Vuelto);
             writer.Close();
+            MessageBox.Show("Venta Realizada");
+            dataGridView2.DataSource = null;
+            dataGridView2.Refresh();
         }
     }
 }

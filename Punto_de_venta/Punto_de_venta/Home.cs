@@ -54,6 +54,7 @@ namespace Punto_de_venta
             {
                 btn_Productos.Enabled = false;
                 btn_Productos.Visible = false;
+                button1.Visible = false;
             }
             if (tipo == 1)
             {
@@ -64,7 +65,7 @@ namespace Punto_de_venta
         private void bt_ventas_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear(); //limpio el panel para agregar un nuevo View de ventas
-            var ventas = new Ventas();
+            var ventas = new Ventas(local);
             panel2.Controls.Add(ventas);//agrega la vista de ventas al panel2
             ventas.Dock = DockStyle.Fill; // hace que la pantalla se ajuste al espacio
         }
