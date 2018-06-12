@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.76247F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.23753F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 5);
@@ -84,7 +84,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(23, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 45);
+            this.label3.Size = new System.Drawing.Size(169, 45);
             this.label3.TabIndex = 2;
             this.label3.Text = "Costo";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,7 +95,7 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Location = new System.Drawing.Point(23, 155);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 45);
+            this.label4.Size = new System.Drawing.Size(169, 45);
             this.label4.TabIndex = 3;
             this.label4.Text = "Precio";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,7 +106,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(23, 200);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 45);
+            this.label2.Size = new System.Drawing.Size(169, 45);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cantidad";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,7 +117,7 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(23, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 45);
+            this.label5.Size = new System.Drawing.Size(169, 45);
             this.label5.TabIndex = 4;
             this.label5.Text = "Codigo";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,7 +128,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(23, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 45);
+            this.label1.Size = new System.Drawing.Size(169, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,7 +140,7 @@
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
             this.btnAceptar.Location = new System.Drawing.Point(23, 248);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(170, 44);
+            this.btnAceptar.Size = new System.Drawing.Size(169, 44);
             this.btnAceptar.TabIndex = 5;
             this.btnAceptar.Text = "Guardar";
             this.btnAceptar.UseVisualStyleBackColor = false;
@@ -151,9 +151,9 @@
             this.brnCancelar.BackColor = System.Drawing.Color.Red;
             this.brnCancelar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.brnCancelar.ForeColor = System.Drawing.Color.White;
-            this.brnCancelar.Location = new System.Drawing.Point(199, 248);
+            this.brnCancelar.Location = new System.Drawing.Point(198, 248);
             this.brnCancelar.Name = "brnCancelar";
-            this.brnCancelar.Size = new System.Drawing.Size(172, 44);
+            this.brnCancelar.Size = new System.Drawing.Size(171, 44);
             this.brnCancelar.TabIndex = 6;
             this.brnCancelar.Text = "Limpiar";
             this.brnCancelar.UseVisualStyleBackColor = false;
@@ -162,41 +162,41 @@
             // tbNombre
             // 
             this.tbNombre.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbNombre.Location = new System.Drawing.Point(199, 23);
+            this.tbNombre.Location = new System.Drawing.Point(198, 23);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(172, 22);
+            this.tbNombre.Size = new System.Drawing.Size(171, 22);
             this.tbNombre.TabIndex = 7;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtCodigo.Location = new System.Drawing.Point(199, 68);
+            this.txtCodigo.Location = new System.Drawing.Point(198, 68);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(172, 22);
+            this.txtCodigo.Size = new System.Drawing.Size(171, 22);
             this.txtCodigo.TabIndex = 8;
             // 
             // tbCosto
             // 
             this.tbCosto.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbCosto.Location = new System.Drawing.Point(199, 113);
+            this.tbCosto.Location = new System.Drawing.Point(198, 113);
             this.tbCosto.Name = "tbCosto";
-            this.tbCosto.Size = new System.Drawing.Size(172, 22);
+            this.tbCosto.Size = new System.Drawing.Size(171, 22);
             this.tbCosto.TabIndex = 9;
             // 
             // tbPrecio
             // 
             this.tbPrecio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbPrecio.Location = new System.Drawing.Point(199, 158);
+            this.tbPrecio.Location = new System.Drawing.Point(198, 158);
             this.tbPrecio.Name = "tbPrecio";
-            this.tbPrecio.Size = new System.Drawing.Size(172, 22);
+            this.tbPrecio.Size = new System.Drawing.Size(171, 22);
             this.tbPrecio.TabIndex = 10;
             // 
             // tbCantidad
             // 
             this.tbCantidad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbCantidad.Location = new System.Drawing.Point(199, 203);
+            this.tbCantidad.Location = new System.Drawing.Point(198, 203);
             this.tbCantidad.Name = "tbCantidad";
-            this.tbCantidad.Size = new System.Drawing.Size(172, 22);
+            this.tbCantidad.Size = new System.Drawing.Size(171, 22);
             this.tbCantidad.TabIndex = 11;
             // 
             // viewProducto

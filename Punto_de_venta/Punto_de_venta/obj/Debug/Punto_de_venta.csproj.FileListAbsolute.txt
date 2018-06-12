@@ -42,3 +42,4 @@ D:\Abner\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debu
 D:\Abner\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.csproj.CoreCompileInputs.cache
 D:\Abner\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.exe
 D:\Abner\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.pdb
+D:\Abner\Proyectos\Proyecto Juan\proyecto\Punto_de_venta\Punto_de_venta\obj\Debug\Punto_de_venta.viewReportes.resources

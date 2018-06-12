@@ -98,6 +98,7 @@ namespace Punto_de_venta
                 temp.Costo = float.Parse(lectura.ReadLine());
                 temp.Precio = float.Parse(lectura.ReadLine());
                 temp.Cantidad = Convert.ToInt32(lectura.ReadLine());
+                temp.CantidadVentas = Convert.ToInt32(lectura.ReadLine());
                 listado.Add(temp); //agrego a la lista de productos
             }
             lectura.Close();
@@ -108,7 +109,7 @@ namespace Punto_de_venta
         {
             int index = dataGridView1.CurrentRow.Index;
             int monto = Convert.ToInt32(tbCantidad.Text);
-            if (monto > listado[index].Cantidad)
+            if (monto > listado[index].Cantidad) // si la cantidad que solicita no hay suficiente en el inventario, no se prodece a vender
             {
                 MessageBox.Show("No se puede realizar operacion, verifique cantidad");
             }
@@ -119,7 +120,8 @@ namespace Punto_de_venta
                 temp.Producto = listado[index].Nombre;
                 temp.Precio = listado[index].Precio;
                 temp.Cantidad = monto;
-                listado[index].Cantidad = listado[index].Cantidad - monto;
+                listado[index].Cantidad = listado[index].Cantidad - monto; //Modifico la cantidad de productos que hay, restando el monto que solicitan comprar
+                listado[index].CantidadVentas = listado[index].CantidadVentas + monto; //actualizo cuantos productos se van vendiendo.
                 temp.Total = total;
                 listadeventa.Add(temp);
                 ActualizarDetalleVentas();
@@ -135,6 +137,7 @@ namespace Punto_de_venta
             dataGridView1.DataSource = listado; // lo lleno con los datos del listado que he reunido en la fucion while
             dataGridView1.Refresh();
             dataGridView1.Columns["Costo"].Visible = false;
+            dataGridView1.Columns["CantidadVentas"].Visible = false;
         }
 
         public void ActualizarDetalleVentas()
@@ -191,6 +194,7 @@ namespace Punto_de_venta
                 writer.WriteLine(listado[i].Costo);
                 writer.WriteLine(listado[i].Precio);
                 writer.WriteLine(listado[i].Cantidad);
+                writer.WriteLine(listado[i].CantidadVentas);
             }
             writer.Close();
         }
@@ -229,6 +233,7 @@ namespace Punto_de_venta
             guardar.Dinero = float.Parse(textBox4.Text);
             guardar.Fecha = DateTime.Now;
             guardar.Vuelto = cambio;
+            guardar.Cajero = vendedorActual;
             string archivo = "venta.txt";
             FileStream stream = new FileStream(archivo, FileMode.Append, FileAccess.Write);
             StreamWriter writer = new StreamWriter(stream);
@@ -236,7 +241,7 @@ namespace Punto_de_venta
             writer.WriteLine(guardar.Cliente.Nit);
             writer.WriteLine(guardar.Cliente.Nombre);
             writer.WriteLine(guardar.Fecha);
-            writer.WriteLine(guardar.Cajero);
+            writer.WriteLine(guardar.Cajero.Username);
             writer.WriteLine(guardar.Total);
             writer.WriteLine(guardar.Dinero);
             writer.WriteLine(guardar.Vuelto);

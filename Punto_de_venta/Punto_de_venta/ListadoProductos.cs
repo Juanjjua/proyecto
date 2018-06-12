@@ -41,6 +41,7 @@ namespace Punto_de_venta
                 temp.Costo = float.Parse(lectura.ReadLine());
                 temp.Precio = float.Parse(lectura.ReadLine());
                 temp.Cantidad = Convert.ToInt32(lectura.ReadLine());
+                temp.CantidadVentas = Convert.ToInt32(lectura.ReadLine());
                 listado.Add(temp); //agrego a la lista de productos
             }
             lectura.Close();

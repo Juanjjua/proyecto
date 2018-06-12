@@ -46,7 +46,7 @@ namespace Punto_de_venta
             if(ok == true) //valido que hallan coincidido el usuario y contraseña almenos una vez
             {
                 this.Hide();
-                new Home(usuarioLogin.Type).ShowDialog();
+                new Home(usuarioLogin.Type, usuarioLogin).ShowDialog();
                 this.Close();
 
             }

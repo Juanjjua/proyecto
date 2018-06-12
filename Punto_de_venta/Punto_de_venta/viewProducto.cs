@@ -68,6 +68,7 @@ namespace Punto_de_venta
                                 writer.WriteLine(tbCosto.Text);
                                 writer.WriteLine(tbPrecio.Text);
                                 writer.WriteLine(tbCantidad.Text);
+                                writer.WriteLine("0"); //Al registrar el producto tendra 0 cantidades vendidas
                                 MessageBox.Show("Registro  nuevo agregado");
                                 writer.Close();
                             }
@@ -87,6 +88,7 @@ namespace Punto_de_venta
                                     writer.WriteLine(Convert.ToString(entrada[i].Costo));
                                     writer.WriteLine(Convert.ToString(entrada[i].Precio));
                                     writer.WriteLine(Convert.ToString(entrada[i].Cantidad));
+                                    writer.WriteLine(Convert.ToString(entrada[i].CantidadVentas));//no modifico la cantidad de que se ha vendido
                                 }
                                 MessageBox.Show("Registro  ACTUALIZADO agregado");
                                 writer.Close();

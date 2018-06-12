@@ -33,6 +33,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.bt_ventas = new System.Windows.Forms.Button();
             this.btn_Productos = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -70,6 +71,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.bt_ventas, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btn_Productos, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -91,6 +93,18 @@
             this.panel2.Size = new System.Drawing.Size(860, 602);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(3, 243);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(204, 114);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Reportes";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bt_ventas
             // 
@@ -149,5 +163,6 @@
         private System.Windows.Forms.Button btn_Productos;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Button button1;
     }
 }

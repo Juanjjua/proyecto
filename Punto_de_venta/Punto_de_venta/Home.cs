@@ -68,5 +68,13 @@ namespace Punto_de_venta
             panel2.Controls.Add(ventas);//agrega la vista de ventas al panel2
             ventas.Dock = DockStyle.Fill; // hace que la pantalla se ajuste al espacio
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear(); //limpio el panel para agregar un nuevo View de ventas
+            var reportes = new viewReportes();
+            panel2.Controls.Add(reportes); //agrega la vista de ventas al panel2
+            reportes.Dock = DockStyle.Fill; // hace que la pantalla se ajuste al espacio
+        }
     }
 }
