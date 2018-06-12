@@ -13,12 +13,14 @@ namespace Punto_de_venta
     public partial class Home : Form
     {
         int tipoUsuario = 1;// sI ES 1 es administrador , si es 2 es vendedor
+        Usuario local = new Usuario();
         public Home()
         {
             InitializeComponent();
         }
-        public Home(int type)
+        public Home(int type, Usuario llegada)
         {
+            local = llegada;
             tipoUsuario = type;
             InitializeComponent();
         }

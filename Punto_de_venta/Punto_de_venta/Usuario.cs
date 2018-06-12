@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Punto_de_venta
 {
-    class Usuario
+    public class Usuario
     {
         string username;
         string pasword;
