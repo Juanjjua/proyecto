@@ -40,3 +40,17 @@ Lapicero
 4
 8
 -1
+310003135
+Lapicero
+2
+3
+6
+Borrador
+1
+4
+4
+Marcador
+3
+5
+15
+-1

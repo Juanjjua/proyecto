@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="clientes.cs" />
     <Compile Include="DetalleVenta.cs" />
+    <Compile Include="ListaVendorFecha.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,7 @@
     <Compile Include="FrmProducto.Designer.cs">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="MejorVendedor.cs" />
     <Compile Include="producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
